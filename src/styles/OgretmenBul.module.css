@@ -1,0 +1,16 @@
+.test {
+  flex-direction: column;
+}
+
+.teacher_box_dimensions {
+  width: 360;
+  height: 316;
+}
+
+.teacher_image {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ff8801;
+  border-radius: 50%;
+  overflow: hidden;
+}
