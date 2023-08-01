@@ -1,10 +1,10 @@
-import { useQuery } from "react-query";
-import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
-import { currentUser } from "@/store/slices/userSlice";
+import { useQuery } from 'react-query';
+import axios from 'axios';
+import { useSelector, useDispatch } from 'react-redux';
+import { currentUser } from '../../store/slices/userSlice';
 
-import { getUser } from "@/store/slices/userSlice";
-import CreationComponentForm from "../DashboardForms/CreationComponentForm";
+import { getUser } from '../../store/slices/userSlice';
+import CreationComponentForm from '../DashboardForms/CreationComponentForm';
 const CreationComponent = () => {
   const user = useSelector(currentUser);
   const dispatch = useDispatch();
@@ -14,10 +14,10 @@ const CreationComponent = () => {
     error: userError,
     isLoading: isUserLoading,
   } = useQuery({
-    queryKey: ["userTeachLessons"],
+    queryKey: ['userTeachLessons'],
     queryFn: async () => {
       const response = await axios.get(
-        "https://octopus-app-577yw.ondigitalocean.app/teacher-application",
+        'https://octopus-app-577yw.ondigitalocean.app/teacher-application',
         { withCredentials: true }
       );
       dispatch(getUser(response.data));

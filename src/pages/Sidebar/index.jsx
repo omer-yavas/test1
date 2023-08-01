@@ -1,4 +1,4 @@
-import MobileSideBar from "@/Components/Dashboard/mobileSideBar";
+import MobileSideBar from '../../Components/Dashboard/mobileSideBar';
 
 const Sidebar = () => {
   return <MobileSideBar></MobileSideBar>;

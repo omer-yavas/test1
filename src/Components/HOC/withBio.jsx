@@ -5,9 +5,9 @@ import { LinearProgress } from '@mui/material';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
-import { currentUser } from '@/store/slices/userSlice';
+import { currentUser } from '../../store/slices/userSlice';
 
-import { getUser } from '@/store/slices/userSlice';
+import { getUser } from '../../store/slices/userSlice';
 import { useState } from 'react';
 
 const withBioComponent = (WrappedComponent) => {

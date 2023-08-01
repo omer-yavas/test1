@@ -1,12 +1,12 @@
-import RegisterComponent from "@/Components/Auth/RegisterComponent";
-import Navbar from "@/Components/Navbar";
+import RegisterComponent from '../../Components/Auth/RegisterComponent';
+import Navbar from '../../Components/Navbar';
 const Register = () => {
   return (
     <>
       <Navbar />
       <div
         className="points teacher-bul pt-0 d-flex align-items-center shadow-sm mt-0"
-        style={{ background: "#f3f3fe" }}
+        style={{ background: '#f3f3fe' }}
       >
         <div className="container">
           <div className="row">

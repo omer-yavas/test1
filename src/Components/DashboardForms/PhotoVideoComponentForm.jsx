@@ -6,7 +6,7 @@ import s3 from '../../utils/awsconfig';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import useSubmitHook from '@/utils/submitUtil';
+import useSubmitHook from '../../utils/submitUtil';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 const PhotoVideoComponentForm = ({ usersData }) => {

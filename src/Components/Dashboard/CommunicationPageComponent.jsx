@@ -1,10 +1,10 @@
-import { useQuery } from "react-query";
-import axios from "axios";
-import { CircularProgress } from "@mui/material";
-import { useSelector, useDispatch } from "react-redux";
-import { currentUser } from "@/store/slices/userSlice";
-import { getUser } from "@/store/slices/userSlice";
-import CommunicationPageFormComponent from "../DashboardForms/CommunicationPageForm";
+import { useQuery } from 'react-query';
+import axios from 'axios';
+import { CircularProgress } from '@mui/material';
+import { useSelector, useDispatch } from 'react-redux';
+import { currentUser } from '../../store/slices/userSlice';
+import { getUser } from '../../store/slices/userSlice';
+import CommunicationPageFormComponent from '../DashboardForms/CommunicationPageForm';
 
 const CommunicationPageComponent = () => {
   const user = useSelector(currentUser);
@@ -15,10 +15,10 @@ const CommunicationPageComponent = () => {
     error: userError,
     isLoading: isUserLoading,
   } = useQuery({
-    queryKey: ["user"],
+    queryKey: ['user'],
     queryFn: async () => {
       const response = await axios.get(
-        "https://octopus-app-577yw.ondigitalocean.app/teacher-application",
+        'https://octopus-app-577yw.ondigitalocean.app/teacher-application',
         { withCredentials: true }
       );
       dispatch(getUser(response.data));

@@ -1,9 +1,10 @@
-import { useSelector, useDispatch } from "react-redux";
-import { currentUser } from "@/store/slices/userSlice";
-import axios from "axios";
-import { getUser } from "@/store/slices/userSlice";
-import { useQuery } from "react-query";
-import WhereTheLessonComponentForm from "../DashboardForms/WhereLessonComponentForm";
+import { useSelector, useDispatch } from 'react-redux';
+import { currentUser } from '../../store/slices/userSlice';
+import axios from 'axios';
+import { getUser } from '../../store/slices/userSlice';
+import { useQuery } from 'react-query';
+import WhereTheLessonComponentForm from '../DashboardForms/WhereLessonComponentForm';
+
 const WhereTheLessonComponent = () => {
   const user = useSelector(currentUser);
   const dispatch = useDispatch();
@@ -13,10 +14,10 @@ const WhereTheLessonComponent = () => {
     error: userError,
     isLoading: isUserLoading,
   } = useQuery({
-    queryKey: ["whereTheLesson"],
+    queryKey: ['whereTheLesson'],
     queryFn: async () => {
       const response = await axios.get(
-        "https://octopus-app-577yw.ondigitalocean.app/teacher-application",
+        'https://octopus-app-577yw.ondigitalocean.app/teacher-application',
         { withCredentials: true }
       );
       dispatch(getUser(response.data));

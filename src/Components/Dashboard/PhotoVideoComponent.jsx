@@ -1,10 +1,8 @@
 import { useQuery } from 'react-query';
 import axios from 'axios';
-
 import { useSelector, useDispatch } from 'react-redux';
-import { currentUser } from '@/store/slices/userSlice';
-
-import { getUser } from '@/store/slices/userSlice';
+import { currentUser } from '../../store/slices/userSlice';
+import { getUser } from '../../store/slices/userSlice';
 import PhotoVideoComponentForm from '../DashboardForms/PhotoVideoComponentForm';
 
 const PhotoVideoComponent = () => {

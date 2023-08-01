@@ -1,4 +1,4 @@
-import useSubmitHook from '@/utils/submitUtil';
+import useSubmitHook from '../../utils/submitUtil';
 import { useForm } from 'react-hook-form';
 import LoadingButtonDashboard from '../Dashboard/LoadingButton.jsx/LoadingButtonDashboard';
 import NotificationButton from '../Dashboard/Notifications/NotificationButton';

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useSubmitHook from '@/utils/submitUtil';
+import useSubmitHook from '../../utils/submitUtil';
 import { useForm, useFieldArray } from 'react-hook-form';
 import LoadingButtonDashboard from '../Dashboard/LoadingButton.jsx/LoadingButtonDashboard';
 

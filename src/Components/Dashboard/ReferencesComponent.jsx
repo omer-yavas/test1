@@ -1,11 +1,10 @@
-import { useQuery } from "react-query";
-import axios from "axios";
-import { CircularProgress } from "@mui/material";
-import { useSelector, useDispatch } from "react-redux";
-import { currentUser } from "@/store/slices/userSlice";
-
-import { getUser } from "@/store/slices/userSlice";
-import ReferencesComponentForm from "../DashboardForms/ReferencesComponent";
+import { useQuery } from 'react-query';
+import axios from 'axios';
+import { CircularProgress } from '@mui/material';
+import { useSelector, useDispatch } from 'react-redux';
+import { currentUser } from '../../store/slices/userSlice';
+import { getUser } from '../../store/slices/userSlice';
+import ReferencesComponentForm from '../DashboardForms/ReferencesComponent';
 
 const ReferencesComponent = () => {
   const user = useSelector(currentUser);
@@ -16,10 +15,10 @@ const ReferencesComponent = () => {
     error: userError,
     isLoading: isUserLoading,
   } = useQuery({
-    queryKey: ["userReferences"],
+    queryKey: ['userReferences'],
     queryFn: async () => {
       const response = await axios.get(
-        "https://octopus-app-577yw.ondigitalocean.app/teacher-application",
+        'https://octopus-app-577yw.ondigitalocean.app/teacher-application',
         { withCredentials: true }
       );
       dispatch(getUser(response.data));

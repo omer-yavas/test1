@@ -1,16 +1,16 @@
-import Head from "next/head";
-import { Inter } from "next/font/google";
+import Head from 'next/head';
+import { Inter } from 'next/font/google';
 
-import Recommandation from "@/Components/HomePage/Recommandation";
-import Banner from "@/Components/HomePage/Banner";
-import BannerTwo from "@/Components/HomePage/BannerTwo";
-import BannerThree from "@/Components/HomePage/BannerThree";
-import Footer from "@/Components/HomePage/Footer";
-import Verified from "@/Components/HomePage/Verified";
-import Media from "@/Components/HomePage/Media";
-import References from "@/Components/HomePage/References";
-import Layout from "@/Components/Layout";
-const inter = Inter({ subsets: ["latin"] });
+import Recommandation from '../Components/HomePage/Recommandation';
+import Banner from '../Components/HomePage/Banner';
+import BannerTwo from '../Components/HomePage/BannerTwo';
+import BannerThree from '../Components/HomePage/BannerThree';
+import Footer from '../Components/HomePage/Footer';
+import Verified from '../Components/HomePage/Verified';
+import Media from '../Components/HomePage/Media';
+import References from '../Components/HomePage/References';
+import Layout from '../Components/Layout';
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
-import TeacherDetail from '@/Components/TeacherDetail/TeacherDetail';
+import TeacherDetail from '../../Components/TeacherDetail/TeacherDetail';
 import Head from 'next/head';
-import Layout from '@/Components/Layout';
+import Layout from '../../Components/Layout';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 

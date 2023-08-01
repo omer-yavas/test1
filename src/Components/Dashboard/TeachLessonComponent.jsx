@@ -2,9 +2,9 @@ import { useQuery } from 'react-query';
 import axios from 'axios';
 import { CircularProgress } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
-import { currentUser } from '@/store/slices/userSlice';
+import { currentUser } from '../../store/slices/userSlice';
 
-import { getUser } from '@/store/slices/userSlice';
+import { getUser } from '../../store/slices/userSlice';
 import TeachLessonComponentForm from '../DashboardForms/TeachLessonComponentForm';
 
 const TeachLessonComponent = () => {

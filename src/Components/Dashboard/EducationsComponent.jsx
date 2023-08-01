@@ -1,10 +1,10 @@
-import { useQuery } from "react-query";
-import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
-import { currentUser } from "@/store/slices/userSlice";
+import { useQuery } from 'react-query';
+import axios from 'axios';
+import { useSelector, useDispatch } from 'react-redux';
+import { currentUser } from '../../store/slices/userSlice';
 
-import { getUser } from "@/store/slices/userSlice";
-import EducationForm from "../DashboardForms/EducationForm";
+import { getUser } from '../../store/slices/userSlice';
+import EducationForm from '../DashboardForms/EducationForm';
 
 const EducationsComponent = () => {
   const user = useSelector(currentUser);
@@ -15,10 +15,10 @@ const EducationsComponent = () => {
     error: userError,
     isLoading: isUserLoading,
   } = useQuery({
-    queryKey: ["priceComponent"],
+    queryKey: ['priceComponent'],
     queryFn: async () => {
       const response = await axios.get(
-        "https://octopus-app-577yw.ondigitalocean.app/teacher-application",
+        'https://octopus-app-577yw.ondigitalocean.app/teacher-application',
         { withCredentials: true }
       );
       dispatch(getUser(response.data));

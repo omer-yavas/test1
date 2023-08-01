@@ -1,4 +1,4 @@
-import useSubmitHook from '@/utils/submitUtil';
+import useSubmitHook from '../../utils/submitUtil';
 import useFetchCitiesAndCounties from '../TeacherRegisterForm/fetchCountries';
 import useFetchCitiesAndCountiesStudent from '../TeacherRegisterForm/fetchCountriesStudent';
 import LoadingButtonDashboard from '../Dashboard/LoadingButton.jsx/LoadingButtonDashboard';

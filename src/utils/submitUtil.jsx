@@ -2,7 +2,7 @@ import { useMutation } from 'react-query';
 import { useQueryClient } from 'react-query';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
-import { currentUser } from '@/store/slices/userSlice';
+import { currentUser } from '../store/slices/userSlice';
 const useSubmitHook = () => {
   const user = useSelector(currentUser);
   const submitHandler = async (formData) => {

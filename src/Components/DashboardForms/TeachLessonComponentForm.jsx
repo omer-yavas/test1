@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useUIDSeed } from 'react-uid';
-import useSubmitHook from '@/utils/submitUtil';
+import useSubmitHook from '../../utils/submitUtil';
 import { useFieldArray, useForm } from 'react-hook-form';
 import { DevTool } from '@hookform/devtools';
 import LoadingButtonDashboard from '../Dashboard/LoadingButton.jsx/LoadingButtonDashboard';

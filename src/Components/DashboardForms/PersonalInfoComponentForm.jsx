@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 import { registerLocale } from 'react-datepicker';
 import { tr } from 'date-fns/locale';
 import countries from '../Dashboard/countriesListApi/countriesList';
-import useSubmitHook from '@/utils/submitUtil';
+import useSubmitHook from '../../utils/submitUtil';
 import { useForm } from 'react-hook-form';
 import format from 'date-fns/format';
 import { DevTool } from '@hookform/devtools';
