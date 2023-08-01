@@ -8,7 +8,7 @@ import Layout from '../../Components/Layout';
 import DetailedSearchForm from '../../Components/FindTeacher/detailedSearchForm';
 import { useMediaQuery } from '@mui/material';
 import SearchModal from '../../Components/FindTeacher/modal/searchModal';
-import { Pagination } from '@mui/material/Pagination';
+import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import classes from '../../styles/OgretmenBul.module.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
